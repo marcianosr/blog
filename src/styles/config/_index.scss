@@ -1,0 +1,16 @@
+@forward "reset";
+@forward "typography";
+@forward "colors";
+
+:root {
+  --grid: [side-content] minmax(50px, auto) [main-content] minmax(250px, 1fr);
+}
+
+html {
+  // background: linear-gradient(
+  //   0deg,
+  //   var(--dark-theme),
+  //   var(--dark-theme-lighter)
+  // );
+  background: var(--dark-theme);
+}

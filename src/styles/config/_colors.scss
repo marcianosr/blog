@@ -1,0 +1,14 @@
+@use "sass:color";
+
+:root {
+  --primary-cinnabar: #e34234;
+  --lighter-cinnabar: lighten(--primary-cinnabar, 10%);
+  --primary-gradient: linear-gradient(
+    90deg,
+    --primary-cinnabar,
+    linear-cinnabar
+  );
+
+  --dark-theme: #131313eb;
+  --dark-theme-lighter: lighten(var(--dark-theme), 10%);
+}

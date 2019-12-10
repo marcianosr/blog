@@ -1,0 +1,16 @@
+.categoriesListContainer {
+  overflow-x: scroll;
+  margin-inline-end: -2rem; //-2 is layout padding
+  margin-block: 2rem;
+}
+
+.categoriesList {
+  display: flex;
+}
+
+.categoriesListItem {
+  margin-inline-end: 3.5rem;
+  flex: 1 0 auto; //  Don't shrink down if pushed away.
+  font-size: 2.2rem;
+  font-weight: 500;
+}

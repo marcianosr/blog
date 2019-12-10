@@ -1,0 +1,8 @@
+@use "../../styles/config";
+
+.layout {
+  display: grid;
+  // grid-template-columns: var(--grid);
+
+  padding: 1rem 2rem;
+}

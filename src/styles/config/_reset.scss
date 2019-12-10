@@ -1,0 +1,73 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+// I select only lists that do have a class attribute because if a plain ol’ <ul> or <ol> gets used, I want it to look like a list.
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A elements that don't have a class get default styles */
+// https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+//I really like this CSS trick and I’ve finally been brave enough to add it to the reset.
+// The lobotomised owl selector targets direct descendants of an article and adds 1em of top margin to them.
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
